@@ -27,3 +27,8 @@ smallImg[2].onclick = function(){
 smallImg[3].onclick = function(){
     productImg.src = smallImg[3].src
 }
+
+
+// Toggle form
+
+

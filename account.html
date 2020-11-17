@@ -41,7 +41,38 @@
         </div>
     </div>
 
-    
+    <div class="account-page">
+        <div class="container">
+            <div class="row">
+                <div class="col-2">
+                    <img width="120%" src="static/images/background/two-girls-shopping.png" alt="">
+                </div>
+                <div class="col-2">
+                    <div class="form-container">
+                        <div class="form-btn">
+                            <span onclick="login()">Login</span>
+                            <span onclick="register()">Register</span>
+                            <hr id="indicator">
+                        </div>
+                        <form action="" id="loginForm">
+                            <input type="text" placeholder="username">
+                            <input type="password" name="" id="" placeholder="Password">
+                            <button type="submit" class="btn">Login</button>
+                            <a href="">Forgot Password</a>
+                            
+                        </form>
+                        <form action="" id="registerForm">
+                            <input type="text" placeholder="Username">
+                            <input type="email" placeholder="Email">
+                            <input type="password" name="password" id="password1" placeholder="Password">
+                            <input type="password" name="password2" id="passowrd2" placeholder="Retype Password">
+                            <button type="submit" class="btn">Register</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
     
 
     <div class="footer">
@@ -92,7 +123,24 @@
     integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
 <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
     crossorigin="anonymous"></script>
+<script >
+        let loginForm = document.getElementById('loginForm');
+        let registerForm = document.getElementById('registerForm');
+        let indicator = document.getElementById('indicator')
+
+        function register(){
+            registerForm.style.transform = "translateX(0px)";
+            loginForm.style.transform = "translateX(0px)";
+            indicator.style.transform =  "translateX(100px)";
+        }
+
+        function login(){
+            registerForm.style.transform = "translateX(300px)";
+            loginForm.style.transform = "translateX(300px)";
+            indicator.style.transform =  "translateX(0px)";
+        }
+
+</script>
 <script src="/static/js/index.js"></script>
-<script src="/static/js/products.js"></script>
 
 </html>

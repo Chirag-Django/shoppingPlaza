@@ -265,7 +265,8 @@ small{
     background: radial-gradient(#d2f0f1,#f3c6b8);
     color: var(--teal);
     font-size: 15px;
-    padding: 40px 0 20px 0;
+    padding: 30px 0 20px 0;
+    margin-top: 10px;
 }
 
 .footer h3{
@@ -275,7 +276,7 @@ small{
 
 .footer-col-1,.footer-col-2,.footer-col-3,.footer-col-4{
     min-width: 250px;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 }
 
 .footer-col-1{
@@ -294,7 +295,7 @@ small{
 
 
 .footer-col-2 img{
-    margin-bottom: 15px;
+    margin-bottom: 10px;
     
 }
 
@@ -480,6 +481,81 @@ td:last-child{
 
 th:last-child{
     text-align: right;
+}
+
+/* ACCOUNT  */
+.form-container{
+    background: white;
+    width: 300px;
+    height: 400px;
+    position: relative;
+    text-align: center;
+    padding: 50px 0;
+    margin: auto;
+    box-shadow: 1px 5px 5px 1px;
+    overflow: hidden;
+}
+
+.form-container span{
+    font-weight: bold;
+    padding: 0 10px;
+    color: var(--teal);
+    cursor: pointer;
+    width: 100px;
+    display: inline-block;
+    
+}
+
+.form-btn{
+    display: inline-block;
+}
+
+.form-container form{
+    max-width: 300px;
+    padding: 0 20px;
+    position: absolute;
+    top: 130px;
+    transition: transform 1s;
+}
+
+.form-container form input{
+    width: 100%;
+    height: 30px;
+    margin: 10px 0;
+    padding: 0 10px;
+    border: 1px solid brown;
+}
+
+.form-container form .btn{
+    width: 100%;
+    border: none;
+    cursor: pointer;
+    margin: 10px 0;
+}
+
+.form-container form .btn{
+    outline: none;
+}
+
+#loginForm{
+    left: -300px;
+}
+
+#registerForm{
+    left: 0;
+}
+
+#loginForm a{
+    font-size: 14px;
+}
+
+#indicator{
+    width: 100px;
+    border: none;
+    background: var(--teal);
+    height: 3px;
+    margin-top: 8px;
+    transform: translateX(100px);
 }
 
 /* Media Queries */
